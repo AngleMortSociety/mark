@@ -1,0 +1,31 @@
+{
+  "name": "Mark'",
+  "version": "0.0.4",
+  "description": "A web-app for viewing your Markdown files.",
+  "main": "app/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mark",
+    "markdown",
+    "app",
+    "web",
+    "md",
+    "viewer",
+    "node",
+    "js"
+  ],
+  "window": {
+    "toolbar": false,
+    "width": 1024,
+    "height": 720
+  },
+  "author": "Angle Mort Society",
+  "license": "GNU",
+  "dependencies": {
+    "marked": "^0.3.2",
+    "mmd": "^4.4.4",
+    "node-webkit-window-manager": "0.0.3"
+  }
+}

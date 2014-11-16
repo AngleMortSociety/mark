@@ -1,0 +1,30 @@
+{
+  "name": "Mark'",
+  "version": "0.0.4",
+  "authors": [
+    "Angle Mort Society <anglemort@me.com>"
+  ],
+  "description": "A web-app for viewing your Markdown files.",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "mark",
+    "markdown",
+    "app",
+    "web",
+    "md",
+    "viewer",
+    "node",
+    "js"
+  ],
+  "license": "GNU",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

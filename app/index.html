@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Mark'</title>
+
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/add.css" />
+		<!-- <link rel="stylesheet" href="bower_components/highlight.js/src/styles/default.css"> -->
+
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- // <script src="js/highlight.pack.js"></script> -->
+		<script src="js/engine.js"></script>
+		<script src="js/behaviour.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Mark'</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Summary <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu" id="summary">
+								</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Markdown <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#" class="btn-set-gfm"><span class="fa fa-chevron-down" style="width:14px"></span> GFM</a></li>
+								<li><a href="#" class="btn-set-mmd"><span class="fa" style="width:14px"></span> MultiMarkdown</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tools <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#" class="btn-dev-tools"><span class="fa" style="width:14px"></span> Developer Tools</a></li>
+								<li><a href="#" class="btn-set-ontop"><span class="fa" style="width:14px"></span> Stay On Top</a></li>
+								<li><a href="#" class="btn-wth-file"><span class="fa" style="width:14px"></span> Watch file (unstable)</a></li>
+							</ul>
+						</li>
+
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search" id="search-field">
+						</div>
+						<button type="submit" class="btn btn-default" id="search-button">Chercher</button>
+					</form>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<!-- Modal CSS -->
+		<div class="modal fade bs-example-modal-sm" id="modal-css" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">Load External CSS file</h4>
+					</div>
+					<div class="modal-body">
+						<form role="form">
+							<input type="file" id="tutu" value="" name="file-css" accept=".css" class="form-control">
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal JS -->
+		<div class="modal fade bs-example-modal-sm" id="modal-js" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">Load External JS file</h4>
+					</div>
+					<div class="modal-body">
+						<form role="form">
+							<input type="file" id="tyty" value="" name="file-js" accept=".js" class="form-control">
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Export HTML -->
+		<div class="modal fade bs-example-modal-sm" id="modal-html" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">Export HTML file</h4>
+					</div>
+					<div class="modal-body">
+						<form role="form">
+							<input type="text" id="export-html" placeholder="Title page" class="form-control">
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="content" class="col-lg-12 col-md-10 col-md-offset-1"></div>
+
+	</body>
+
+</html>
