@@ -23,7 +23,7 @@ $(document).ready(function() {
 				tables: true
 			});
 			if(datas != '') {
-				useMarked();
+				openFile(win, document.title);
 			}
 		}
 		else {
@@ -32,7 +32,7 @@ $(document).ready(function() {
 				tables: false
 			});
 			if(datas != '') {
-				useMarked();
+				openFile(win, document.title);
 			}
 		}
 	});

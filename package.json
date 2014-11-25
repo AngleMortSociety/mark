@@ -1,7 +1,7 @@
 {
   "name": "Mark'",
   "version": "0.0.4",
-  "description": "A web-app for viewing your Markdown files.",
+  "description": "A node-webkit app for viewing your Markdown files.",
   "main": "app/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,7 +22,7 @@
     "height": 720
   },
   "author": "Angle Mort Society",
-  "license": "GNU",
+  "license": "MIT",
   "dependencies": {
     "marked": "^0.3.2",
     "mmd": "^4.4.4",

@@ -4,7 +4,7 @@
   "authors": [
     "Angle Mort Society <anglemort@me.com>"
   ],
-  "description": "A web-app for viewing your Markdown files.",
+  "description": "A node-webkit app for viewing your Markdown files.",
   "main": "index.html",
   "moduleType": [
     "node"
@@ -19,12 +19,18 @@
     "node",
     "js"
   ],
-  "license": "GNU",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "homepage": "https://github.com/AngleMortSociety/mark",
+  "dependencies": {
+    "font-awesome": "~4.2.0",
+    "bootstrap": "~3.3.1",
+    "highlight.js": "~7.3.0"
+  }
 }
